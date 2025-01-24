@@ -24,10 +24,6 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        console.log("Service ID:", EMAILJS_SERVICE_ID);
-        console.log("Template ID:", EMAILJS_TEMPLATE_ID);
-        console.log("User ID:", EMAILJS_USER_ID);
-
         emailjs
             .send(
                 EMAILJS_SERVICE_ID!,
